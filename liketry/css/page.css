@@ -38,7 +38,7 @@ body {
 
 .question .answer{font-size: 1.8rem; text-align: center; color: #FFF; font-weight: 900; display: table; width: 42.4%; height: 11rem;}
 .question .answer div{vertical-align:middle; display:table-cell;}
- 
+
 .answer-a {position: relative; background-color: #a564c0; border-radius: 30px; float: left; margin-left: 2rem;}
 .answer-a:before{width: 60px; height: 60px; content: "A"; display: block; position: absolute; top: -10%; left: -10%;border-radius: 60px; border: 5px solid #FFFFFF; background: #a564c0; text-align: center; line-height: 60px; color: #FFF; font-size: 30px; font-weight: bold; }
 .answer-a:after{position: absolute; top:99%; left: 50%; display: block; content: ""; border-left: 1.5rem solid #a564c0; border-bottom: 2rem solid transparent;}
@@ -90,7 +90,7 @@ body {
 .prizes .prize-week img {width: 100%; height: 100%; }
 .prizes .prize-1 {width: 13rem; height: 13rem; position: absolute; left: 58.5%; top: 40%;  -webkit-filter: brightness(.7); z-index: 100;}
 .prizes .prize-1 img {width: 100%; height: 100%;}
-.prizes .prize-2 {width: 11rem; height: 11rem; position: absolute; left: 51%; top: 55.5%;  -webkit-filter: brightness(.7); z-index: 10;}
+.prizes .prize-2 {width: 11rem; height: 11rem; position: absolute; left: 51%; top: 55.5%;}
 .prizes .prize-2 img {width: 100%; height: 100%;}
 .prizes .prize-3 {width: 8rem; height: 8rem; position: absolute; left: 29%; top: 55.5%; z-index: 1;}
 .prizes .prize-3 img {width: 100%; height: 100%;}

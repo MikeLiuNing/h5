@@ -9,14 +9,14 @@
     <meta charset="utf-8" />
     <meta name="format-detection" content="telephone=no" /> <!-- 禁止把数字转化为拨号链接 -->
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black" /> 
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
     <meta http-equiv="Pragma" content="no-cache">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/page.css">
     <script>
         var phoneWidth = parseInt(window.screen.width);
         var phoneScale = phoneWidth/640;
-    
+
 
         var ua = navigator.userAgent;
         if (/Android (\d+\.\d+)/.test(ua)){
@@ -30,7 +30,7 @@
             }
             // 其他系统
         } else {
-            document.write('<meta name="viewport" content="width=640, user-scalable=no, target-densitydpi=device-dpi">');   
+            document.write('<meta name="viewport" content="width=640, user-scalable=no, target-densitydpi=device-dpi">');
         }
     </script>
     <script>
@@ -38,7 +38,7 @@
         (function() {
           var hm = document.createElement("script");
           hm.src = "//hm.baidu.com/hm.js?e27235ca3eceac2139735ae592c9201a";
-          var s = document.getElementsByTagName("script")[0]; 
+          var s = document.getElementsByTagName("script")[0];
           s.parentNode.insertBefore(hm, s);
         })();
     </script>
@@ -87,10 +87,10 @@
     <section class="prizes ds-n" id="prize-page">
         <div class="return-btn"><img src="./img/return.png"></div>
         <div class="prize-text"><img src="./img/prize_week.png"></div>
-        <a class="prize-3 prize-week-biycle" href="http://mp.weixin.qq.com/s?__biz=MjM5NTE2MjY2MA==&mid=504414053&idx=1&sn=7b2821c5870efae18848605e8bf06296#rd"><img src="./img/prize_week_1.png"></a>
-        <a class="prize-week prize-week-car" href="http://mp.weixin.qq.com/s?__biz=MjM5NTE2MjY2MA==&mid=2651898055&idx=1&sn=7cc00d1b061cd47097bee9fa1a85a778#rd"><img src="./img/prize-week-biycle.png"></a>
+        <a class="prize-2 prize-week-car" href="#"><img src="./img/prize_week_1.png"></a>
+        <a class="prize-3 prize-week-biycle" href="#"><img src="./img/prize-week-biycle.png"></a>
         <a class="prize-1 prize-week-ring" href="#"><img src="./img/prize-week-ring.png"></a>
-        <a class="prize-2 prize-week-travel" href="#"><img src="./img/prize-week-travel.png"></a>
+        <a class="prize-week prize-week-travel" href="#"><img src="./img/prize-week-travel.png"></a>
         <div class="have-try"><img src="./img/havetry.png"></div>
     </section>
     <!--分享诱导浮层-->
@@ -109,7 +109,7 @@
 <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
 <script type="text/javascript">
     wx.config({
-        debug: false, 
+        debug: false,
         appId: '<?php echo $signPackage["appId"];?>',
         timestamp: <?php echo $signPackage["timestamp"];?>,
         nonceStr: '<?php echo $signPackage["nonceStr"];?>',

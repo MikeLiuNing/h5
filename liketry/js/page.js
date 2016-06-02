@@ -23,7 +23,7 @@ var Page = {
                 $('.prize-travel').addClass('blink-2');
             }, 500)
         }, 4100);
-        
+
         $('#start-btn').on('click', function() {
             _hmt.push(['_trackEvent', 'start-btn', 'click', 'click']);
             $('#first-page').addClass('ds-n');
@@ -46,14 +46,18 @@ var Page = {
             $('#result-page').removeClass('ds-n');
             _hmt.push(['_trackEvent', 'return-btn', 'click', 'click']);
         });
-        $('.prize-week-biycle').on('click', function() {
-            _hmt.push(['_trackEvent', 'prize-week-biycle', 'click', 'click']);
-        });
+
         $('.prize-week-car').on('click', function() {
             _hmt.push(['_trackEvent', 'prize-week-car', 'click', 'click']);
+            window.location = 'http://mp.weixin.qq.com/s?__biz=MjM5NTE2MjY2MA==&mid=504414053&idx=1&sn=7b2821c5870efae18848605e8bf06296#rd';
+        });
+        $('.prize-week-biycle').on('click', function() {
+            _hmt.push(['_trackEvent', 'prize-week-biycle', 'click', 'click']);
+            window.location = 'http://mp.weixin.qq.com/s?__biz=MjM5NTE2MjY2MA==&mid=2651898055&idx=1&sn=7cc00d1b061cd47097bee9fa1a85a778#rd';
         });
         $('.prize-week-ring').on('click', function() {
             _hmt.push(['_trackEvent', 'prize-week-ring', 'click', 'click']);
+            window.location = 'http://mp.weixin.qq.com/s?__biz=MjM5NTE2MjY2MA==&mid=2651898150&idx=1&sn=7e08d482e2531e84ef12fdcc2012c3db&amp;scene=0#wechat_redirect'
         });
         $('.prize-week-travel').on('click', function() {
             _hmt.push(['_trackEvent', 'prize-week-travel', 'click', 'click']);
@@ -107,7 +111,7 @@ var Page = {
                     }, 1000);
                     questionState = 3
                 } else if (questionState == 3) {
-                    _hmt.push(['_trackEvent', 'question-page-3', 'click', 'click']);                
+                    _hmt.push(['_trackEvent', 'question-page-3', 'click', 'click']);
                     $('#question-page').addClass('turn2');
                     setTimeout(function() {
                         self.showResult();
@@ -118,7 +122,7 @@ var Page = {
                     setTimeout(function() {
                         self.resetQuestion();
                     }, 1000);
-                    
+
                 }
             }
         });
@@ -212,7 +216,7 @@ var Page = {
                 title: title, // 分享标题
                 link: link, // 分享链接
                 imgUrl: imgUrl, // 分享图标
-                success: function () { 
+                success: function () {
                    _hmt.push(['_trackEvent', 'wx_share_timeline', 'share', link]);
                 }
             });
@@ -223,7 +227,7 @@ var Page = {
                 imgUrl: imgUrl, // 分享图标
                 type: 'link', // 分享类型,music、video或link，不填默认为link
                 dataUrl: '', // 如果type是music或video，则要提供数据链接，默认为空
-                success: function () { 
+                success: function () {
                     _hmt.push(['_trackEvent', 'wx_share_friends', 'share', link]);
                 }
             });
